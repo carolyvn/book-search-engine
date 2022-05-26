@@ -40,9 +40,9 @@ Refactor the fully functioning Google Books API search engine built with a RESTf
     THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
     
 ## Installation
- -Clone the repo to local machine
- -Install dependencies with `npm install`
- -Start the app with `npm start`
+ - Clone the repo to local machine
+ - Install dependencies with `npm install`
+ - Start the app with `npm start`
  
  ## Usage
  Allow user to search for the books ,save books to booklist or removed it.
