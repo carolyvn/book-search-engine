@@ -10,7 +10,7 @@ const { typeDefs, resolvers } = require('./Schemas');
 const { type } = require('os');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3301;
 
 // Create new Apollor  server and pass in the schema data
 const server = new ApolloServer({
@@ -18,9 +18,6 @@ const server = new ApolloServer({
   resolvers,
   context: authMiddleware,
 });
-
-
-server.applyMiddleware({ app });
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -49,7 +46,7 @@ const startApolloSever = async (typeDefs, resolvers) => {
 
   db.once('open', () => {
     app.listen(PORT, () => {
-      console.log(`API server running on port ${PORT}!`);
+      console.log(`API server running on port http://localhost:${PORT}`);
       console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
     })
   })
