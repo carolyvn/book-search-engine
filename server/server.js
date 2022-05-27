@@ -22,8 +22,6 @@ const server = new ApolloServer({
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-
-
 // if we're in production, serve client/build as static assets
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
@@ -33,16 +31,11 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
-// app.use(routes);
-
-// db.once('open', () => {
-//   app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`));
-// });
 
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloSever = async (typeDefs, resolvers) => {
-  await server.start();
-  server.applyMiddleware({ app });
+  // await server.start();
+  server.applyMiddleware({ app, path: '/' });
 
   db.once('open', () => {
     app.listen(PORT, () => {
