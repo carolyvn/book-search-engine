@@ -5,9 +5,6 @@ const { signToken } = require('../utils/auth');
 // Define the query and mutation function
 const resolvers = {
     Query: {
-        user: async (parents, { userId }) => {
-            return User.findOne({ _id: userId });
-        },
         me: async (parent, args, context) => {
             if (context.user) {
                 return User.findOne({ _id: context.user._id });
