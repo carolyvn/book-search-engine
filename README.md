@@ -3,6 +3,30 @@
 ## Description
 Refactor the fully functioning Google Books API search engine built with a RESTful API to be a GraphQL API built with Apollo Server.
 
+## Table of Contents
+ - [Description](#description)
+ - [Deployed Link](#deployed-link)
+ - [Screenshoot](#screenshoot)
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - [User Story](#user-story)
+ - [Acceptance Criteria](#acceptance-criteria)
+ - [Questions](#questions)
+ 
+## Deployed Link
+ [Book-Search-Engine](https://book-search-yan.herokuapp.com/)
+
+## Screenshoot
+![Screen Shot 2022-06-21 at 12 59 45 AM](https://user-images.githubusercontent.com/90424035/174747733-48c3c0db-1d8e-4daf-9844-48dde3ca04c1.png)
+
+## Installation
+ - Clone the repo to local machine
+ - Install dependencies with `npm install`
+ - Start the app with `npm start`
+ 
+## Usage
+ Allow user to search for the books ,save books to booklist or removed it.
+
 ## User Story
     AS AN avid reader
     I WANT to search for new books to read
@@ -39,15 +63,7 @@ Refactor the fully functioning Google Books API search engine built with a RESTf
     WHEN I click on the Logout button
     THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
     
-## Installation
- - Clone the repo to local machine
- - Install dependencies with `npm install`
- - Start the app with `npm start`
- 
- ## Usage
- Allow user to search for the books ,save books to booklist or removed it.
- 
- ## Deployed Link
- [Book Search Engine]
- 
- ![book-search-engine-demo](https://user-images.githubusercontent.com/90424035/170457075-ad18877a-0a63-45de-b7e0-db218293fa21.gif)
+## Questions
+If you have any questions, please contact me at: 
+- GitHub: [@carolyvn](https://github.com/carolyvn)
+- Email: [@email me](dreamfx@hotmail.com)
